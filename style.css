@@ -88,3 +88,137 @@ nav{
   background-color: #214479;
   /* padding: 1.8rem 4rem; */
 }
+
+.section-container{
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 5rem 1.6rem;
+}
+
+.section-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 6.4rem 0;
+ 
+}
+
+.section-subtitle{
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: #0d213f;
+  max-width: 60rem;
+  margin-bottom: 1.6rem;
+}
+
+
+header{
+  background-color: #fafcff;
+  
+}
+
+.header-container{
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.2rem;
+
+}
+.header-img{
+position: relative;
+}
+
+.header-img img{
+position: absolute;
+top: 50%;
+left: 50%;
+border:0.5rem solid #ffffff;
+border-radius: 3.2rem;
+box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+
+}
+
+.header-img img:nth-child(1) {
+max-width: 350px;
+transform: translate(-75%, -50%);
+
+}
+
+.header-img img:nth-child(2) {
+max-width: 250px;
+transform: translate(0%, -25%);
+}
+
+.header-content{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.header-content >div{
+max-width: 400px;
+display: grid;
+gap: 1.6rem;
+}
+
+.header-content .sub-header{
+font-size: 1.8rem;
+font-weight: 600;
+color: #1e6ce0;
+}
+
+.header-content h1{
+font-size: 4.8rem;
+line-height: 6.4rem;
+font-weight: 800;
+color: #0d213f;
+}
+
+.header-content .action-btn{
+display: flex;
+align-items: center;
+gap: 3.2rem;
+margin-top: 1.6rem;
+}
+
+.story{
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  cursor: pointer;
+}
+
+.video-img{
+  position: relative;
+}
+
+.video-img img{
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100%;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+.video-img span{
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.video-img span .icon{
+  padding: 0 0.3rem;
+  font-size: 1.6rem;
+  background-color: #ffffff;
+  border-radius: 100%;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  
+}
+
+.story span{
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #0d213f;
+}
