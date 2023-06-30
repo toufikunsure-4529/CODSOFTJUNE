@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Roboto:wght@400;700;900&display=swap');
+:root {
+  --primary-color: #3685fb;
+  --primary-color-dark: #2f73d9;
+  --secondary-color: #fafcff;
+  --text-dark: #0d213f;
+  --text-light: #767268;
+  --extra-light: #ffffff;
+  --max-width: 1200px;
+}
+
+
 *{
   padding: 0;
   margin: 0;
@@ -10,9 +21,59 @@ html{
 font-size: 10px;
 scroll-behavior: smooth;
 }
+
+.section-container{
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 5rem 1.6rem;
+}
+
+.section-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 6.4rem 0;
+ 
+}
+
+.section-subtitle{
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: #0d213f;
+  max-width: 60rem;
+  margin-bottom: 1.6rem;
+}
+.btn{
+  padding: 1.2rem 3.2rem;
+  outline: none;
+  border: none;
+  font-size: 1.6rem;
+  color: #ffffff;
+  background-color: #0d213f;
+  border-radius: 8rem;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.btn:hover{
+  background-color: #214479;
+  /* padding: 1.8rem 4rem; */
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  width: 100%;
+  display: block;
+}
+
 body{
   font-family: 'Bacasime Antique', serif;
 }
+
 
 nav{
   padding: 1.6rem;
@@ -71,46 +132,6 @@ nav{
 
 .link a:hover {
   color: #3685fb;
-}
-
-.btn{
-  padding: 1.2rem 3.2rem;
-  outline: none;
-  border: none;
-  font-size: 1.6rem;
-  color: #ffffff;
-  background-color: #0d213f;
-  border-radius: 8rem;
-  cursor: pointer;
-  transition: all 0.4s;
-}
-.btn:hover{
-  background-color: #214479;
-  /* padding: 1.8rem 4rem; */
-}
-
-.section-container{
-  max-width: 120rem;
-  margin: 0 auto;
-  padding: 5rem 1.6rem;
-}
-
-.section-header{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin: 6.4rem 0;
- 
-}
-
-.section-subtitle{
-  font-size: 3.2rem;
-  font-weight: 600;
-  color: #0d213f;
-  max-width: 60rem;
-  margin-bottom: 1.6rem;
 }
 
 
@@ -184,41 +205,267 @@ margin-top: 1.6rem;
 }
 
 .story{
-  display: flex;
-  align-items: center;
-  gap: 3.2rem;
-  cursor: pointer;
+display: flex;
+align-items: center;
+gap: 3.2rem;
+cursor: pointer;
 }
 
 .video-img{
-  position: relative;
+position: relative;
 }
 
+
 .video-img img{
-  width: 6rem;
-  height: 6rem;
-  border-radius: 100%;
-  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+width: 6rem;
+height: 6rem;
+border-radius: 100%;
+box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
 }
 
 .video-img span{
-  position: absolute;
-  top: 50%;
-  left: 100%;
-  transform: translate(-50%, -50%);
+position: absolute;
+top: 50%;
+left: 100%;
+transform: translate(-50%, -50%);
 }
 
 .video-img span .icon{
-  padding: 0 0.3rem;
-  font-size: 1.6rem;
-  background-color: #ffffff;
-  border-radius: 100%;
-  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
-  
+padding: 0 0.3rem;
+font-size: 1.6rem;
+background-color: #ffffff;
+border-radius: 100%;
+box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+
 }
 
 .story span{
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: #0d213f;
+font-size: 1.6rem;
+font-weight: 600;
+color: #0d213f;
+}
+
+
+.section-title{
+font-size: 3.6rem;
+/* border-bottom: 3px solid red; */
+margin-bottom: 1.8rem;
+}
+
+.destination-nav{
+display: flex;
+gap: 1.6rem;
+}
+
+.destination-nav span{
+width: 3rem;
+height: 3rem;
+display: grid;
+place-content: center;
+color: #0d213f;
+border: 1px solid #0d213f;
+border-radius: 100%;
+font-size: 2.2rem;
+cursor: pointer;
+transition: all 0.3s;
+}
+
+.destination-nav span:hover{
+color: #fff;
+background-color: #0d213f;
+}
+
+.destination-grid{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 3.2rem;
+}
+
+.destination-card{
+overflow: hidden;
+position: relative;
+isolation: isolate;
+cursor: pointer;
+}
+.destination-card img{
+border-radius: 1.6rem;
+}
+
+.destination-details{
+position: absolute;
+width: calc(100% - 3.2rem);
+padding: 1.6rem;
+bottom: -6rem;
+left: 50%;
+transform: translateX(-50%);
+text-align: center;
+color: black;
+background-color: rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(4px);
+border-radius: 0.10rem;
+z-index: 1;
+transition: all 0.3s;
+}
+
+.destination-card:hover .destination-details{
+bottom: 1.6rem;
+}
+
+.destination-title{
+font-size: 2rem;
+margin-bottom: 0.8rem;
+}
+
+.destination-subtitle{
+font-size: 1.8rem;
+font-weight: 600;
+margin-bottom: 0.8rem;
+
+}
+
+.trip{
+background-color: #fafcff;
+}
+
+/* .trip-container:is(.section-title,.section-subtitle,.view-all){
+text-align: center;
+margin-right: auto;
+margin-left: auto;
+} */
+
+
+
+.view-all{
+text-align: center;
+margin-right: auto;
+margin-left: auto;
+}
+
+.trip-grid{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 3.2rem;
+margin: 6.4rem 0;
+}
+
+.trip-card{
+border-radius: 1.6rem;
+overflow: hidden;
+box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+transition: all 0.4s;
+}
+
+.trip-card:hover{
+transform: translateY(-1.2rem);
+}
+
+.trip-details{
+padding: 1.6rem;
+display: grid;
+font-size: 1.6rem;
+font-weight: 600;
+color: #0d213f;
+background-color: #ffffff;
+cursor: pointer;
+}
+
+.rating{
+color: goldenrod;
+
+}
+
+.booking-price{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.price span{
+font-weight: 400;
+font-size: 1.4rem;
+color: #767268;
+}
+
+.book-now{
+padding: 0.8rem 2.4rem;
+color: #0d213f;
+outline: none;
+border:1px solid #3685fb;
+border-radius: 8rem;
+background-color: transparent;
+cursor: pointer;
+transition: all 0.3s;
+}
+
+.book-now:hover{
+color: #ffffff;
+background-color: #0d213f;
+}
+
+
+
+.gallary-container{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+gap: 3.2rem;
+}
+
+.img-gallary{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+gap: 1rem;
+
+}
+
+.gallary-col{
+display: grid;
+place-content: center;
+gap: 1rem;
+}
+
+.gallary-col img{
+border-radius: 1.6rem;
+box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.gallary-content{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+.gallary-content>div{
+max-width: 40rem;
+
+}
+
+.gallary-content .section-subtitle {
+margin-bottom: 3.2rem;
+
+}
+
+.subscribe{
+background-color: #fafcff;
+}
+
+.subscribe-container{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+gap: 3.2rem;
+}
+
+.subscribe-form{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.subscribe-form form{
+width: 100%;
+max-width: 40rem;
+display: flex;
+background-color: #ffffff;
+box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+border-radius: 8rem;
 }
