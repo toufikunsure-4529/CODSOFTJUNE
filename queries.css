@@ -1,0 +1,49 @@
+@media(max-width:75em){
+  .header-img img:nth-child(1){
+    max-width: 30rem;
+  }
+  .header-img img:nth-child(2){
+    max-width: 20rem;
+  }
+}
+
+@media(max-width:57em){
+  .nav-link{
+    display: none;
+  }
+  .header-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .header-img{
+    min-height: 50rem;
+  }
+  .destination-grid{
+    gap:1.6rem
+  }
+  .trip-grid{
+    grid-template-columns: repeat(2,1fr);
+
+  }
+}
+
+@media(max-width:38em){
+  .destination-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .trip-grid{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .gallary-container{
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+  .subscribe-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer-container{
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+}
