@@ -1,4 +1,4 @@
-# CODSOFTJUNE
+# CODSOFTJUNE Task 1
  CodSoft Internship program Task 1 Landing Page
 
  # Test deployment
