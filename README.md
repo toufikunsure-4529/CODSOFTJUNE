@@ -1,5 +1,5 @@
 # CODSOFTJUNE
- CodSoft Internship program
+ CodSoft Internship program Task 1 Landing Page
 
  # Test deployment
 https://colandingweb.netlify.app
