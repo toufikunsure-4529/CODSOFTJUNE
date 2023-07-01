@@ -2,7 +2,7 @@
  CodSoft Internship program
 
  # Test deployment
-https://landingweb1.netlify.app
+https://colandingweb.netlify.app
 
 # Run Locally
 https://github.com/toufikunsure-4529/CODSOFTJUNE
